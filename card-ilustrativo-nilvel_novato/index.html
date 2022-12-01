@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="corpo-html">
+
+  <main class="conteudo-principal">
+
+    <div class="conteudo-principal__container-conteudo-principal">
+
+      <div class="container-conteudo-principal__img-conteudo">
+
+        <picture>
+
+          <source media="(min-width: 710px)" srcset="./assets/images/image-product-desktop.jpg">
+
+          <img src="./assets/images/image-product-mobile.jpg">
+          
+
+        </picture>
+      </div>
+
+      <div class="container-conteudo-principal__inf-produto">
+
+
+        <h2 class="inf-produto__class-de-produto">Perfume</h2>
+
+        <h1 class="inf-produto__nome-do-produto"> <span class="quebra-linha">Gabrielle </span> Essence Eau De Parfum
+        </h1>
+
+        <p class="inf-produto__parag-sobre-produto">A floral, solar and voluptuous interpretation composed by Olivier
+          Polge,
+          Perfumer-Creator for the House of CHANEL.</p>
+
+        <div class="inf-produto__precos">
+          <h2 class="precos__preco-produto-desconto">$149.99</h2>
+          <h2 class="precos__preco-produto">$169.99</h2>
+        </div>
+
+
+        <button class="inf-produto__botao-comprar"> <span class="icone-carrinho"></span> add to Cart</button>
+
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Camila Silva</a>.
+    </div>
+  </footer>
+
+</body>
+
+</html>

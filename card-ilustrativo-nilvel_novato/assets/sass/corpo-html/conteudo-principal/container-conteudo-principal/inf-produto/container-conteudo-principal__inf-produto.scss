@@ -1,0 +1,80 @@
+.container-conteudo-principal__inf-produto {
+    flex: 1;
+    padding: 3.0rem;
+    flex-shrink: 3;
+
+    .inf-produto__class-de-produto {
+        text-transform: uppercase;
+        color: $paragrafo;
+        letter-spacing: 0.3rem;
+        
+    }
+
+    .inf-produto__nome-do-produto {
+        color: black;
+        font-family: 'Fraunces', serif;
+        font-size: 3.0rem;
+        padding: 2.0rem 0rem 3.0rem;
+
+        .quebra-linha {
+            display: block;
+        }
+    }
+
+    
+
+    .inf-produto__parag-sobre-produto {
+        color: $paragrafo;
+        padding: 0rem 0rem 3.0rem;
+        line-height: 2.0rem;
+        text-align: left;
+    }
+
+    .inf-produto__precos {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+        padding-bottom: 2.0rem;
+
+        .precos__preco-produto-desconto {
+            color: $verde-claro;
+            font-family: 'Fraunces', serif;
+            font-size: 3.0rem;
+        }
+
+        .precos__preco-produto {
+            color: $paragrafo;
+            text-decoration: line-through;
+        }
+    }
+
+    .inf-produto__botao-comprar {
+        width: 100%;
+        height: 4.0rem;
+        background-color: $verde-claro;
+        border: none;
+        border-radius: 0.5rem;
+        color: $branco;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color .3s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .icone-carrinho {
+            background-image: url("../images/icon-cart.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-block;
+            height: 2.0rem;
+            width: 3.0rem;
+        }
+
+        &:hover {
+            background-color: hsl(157, 37%, 22%);;
+        }
+    }
+
+    
+}
