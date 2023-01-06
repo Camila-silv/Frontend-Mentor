@@ -1,0 +1,119 @@
+.secao-principal {
+    
+    background-color: $dark-blue;
+    background: radial-gradient(ellipse at bottom, hsl(213, 19%, 18%), transparent),radial-gradient(ellipse at top, hsl(216, 10%, 28%), transparent);
+    border-radius: 2.0rem;
+    height: 360px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    padding: 2.0rem 3.4rem;
+    user-select: none;
+
+
+    .secao-principal__container-secao {
+
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        
+
+        .container-secao__container-icone{
+            background-color:hsl(213, 18%, 24%);
+            border-radius: 2.0rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3.8rem;
+            height: 4.0rem;
+
+            .container-icone__estrela {
+                display: inline-block;
+                background-image: url("../../images/icon-star.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 1.6rem;
+                width: 1.8rem;
+            }
+        }
+
+        .container-secao__titulo-secao {
+
+            color: $white;
+            font-size: 2.5rem;
+            font-weight: 700;
+            padding: 1.0rem 0rem 1.0rem 0rem;
+            margin-top: 1.0rem;
+            text-align: left;
+        }
+
+        .container-secao__parag-secao {
+
+            color: $medium-grey;
+            text-align: left;
+            line-height: 2.3rem;
+            font-size: 1.4rem;
+        }
+
+        .container-secao__lista-avaliacao {
+
+            display: flex;
+            justify-content: space-around;
+            gap: 1.5rem;
+            margin: 2.0rem 0rem;
+            width: 100%;
+
+            .lista-avaliacao_itens {
+                color: $light-grey;
+                background-color: hsl(213, 18%, 24%);
+                padding: 1.4rem 1.8rem;
+                border-radius: 100%;
+                cursor: pointer;
+                transition: .2s linear;
+
+                &:hover{
+                    color: $white;
+                    background-color: $light-grey;
+                }
+
+               
+            }
+
+            // class para o js
+            .lista-avaliacao_itens--selecionado {
+                color: $white;
+                background-color: $orange;
+                padding: 1.4rem 1.8rem;
+                border-radius: 100%;
+                cursor: pointer;
+            } 
+        }
+
+        .container-secao__botao {
+
+            background-color: $orange;
+            color: hsl(217, 44%, 86%);
+            text-transform: uppercase;
+            border: none;
+            border-radius: 2.0rem;
+            width: 100%;
+            height: 4.0rem;
+            cursor: pointer;
+            transition: .2s linear;
+            font-weight: 700;
+
+            &:hover{
+                color: $orange;
+                background-color: $white;
+            }
+        }
+    }
+}
+
+.esconder-secao-principal {
+
+    display: none;
+}

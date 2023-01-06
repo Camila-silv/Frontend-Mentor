@@ -1,0 +1,112 @@
+@media (max-width: 370px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .secao-principal {
+        width: 300px;
+        height: 300px;
+
+
+        .secao-principal__container-secao>.container-secao__parag-secao {
+            font-size: 1.6rem;
+        }
+    }
+
+    .container-agradecimento {
+        width: 300px;
+        height: 300px;
+
+        .container-agradecimento__img {
+            width: 130px;
+        }
+    
+        .container-agradecimento__nota {
+           
+            padding: 0.8rem 1.5rem;
+            font-size: 1.3rem;
+        }
+    
+        .container-agradecimento__titulo {
+            font-size: 2.5rem;
+        }
+    
+        .container-agradecimento__parag {
+            font-size: 1.5rem;
+        }
+    }
+
+
+    .container-footer {
+
+        .container-footer__parag-footer {
+            font-size: 1.6rem;
+
+            .parag-footer__ancora {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+
+}
+
+
+@media (max-width: 310px) {
+
+    html {
+        font-size: 40%;
+    }
+
+
+    .secao-principal {
+        width: 260px;
+        height: 260px;
+
+        .secao-principal__container-secao .container-secao__titulo-secao {
+            font-size: 3.5rem
+        }
+
+
+        .secao-principal__container-secao>.container-secao__parag-secao {
+            font-size: 1.8rem;
+        }
+    }
+
+    .container-agradecimento {
+        width: 260px;
+        height: 260px;
+
+        .container-agradecimento__img {
+            width: 110px;
+        }
+    
+        .container-agradecimento__nota {
+           
+            padding: 0.8rem 1.5rem;
+            font-size: 1.5rem;
+        }
+    
+        .container-agradecimento__titulo {
+            font-size: 3.0rem;
+        }
+    
+        .container-agradecimento__parag {
+            font-size: 1.7rem;
+        }
+    }
+
+    .container-footer {
+
+        .container-footer__parag-footer {
+            font-size: 1.8rem;
+
+            .parag-footer__ancora {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+
+}
