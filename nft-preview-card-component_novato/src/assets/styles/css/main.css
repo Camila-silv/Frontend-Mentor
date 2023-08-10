@@ -146,12 +146,123 @@ a {
 }
 
 .main-content {
-  background-color: hsl(215deg, 32%, 27%);
+  background-color: hsl(217deg, 54%, 11%);
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Outfit", sans-serif;
+  position: relative;
+  padding: 0 2.5rem;
+}
+
+.card {
+  background-color: hsl(216deg, 50%, 16%);
+  height: 50rem;
+  min-width: 30rem;
+  max-width: 38rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 1.5rem;
+}
+
+.card__container-product-image {
+  flex: 2;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.container-product-image__img {
+  min-width: 26rem;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.container-product-image__icon-view {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: hsla(178deg, 100%, 50%, 0.401);
+  position: absolute;
+}
+
+.card__product-information {
+  flex: 1;
+}
+
+.product-information__title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: hsl(0deg, 0%, 100%);
+  margin: 2rem 0;
+}
+
+.product-information__paragraphy {
+  color: hsl(215deg, 51%, 70%);
+  line-height: 2rem;
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+}
+
+.product-information__additional-information {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.1rem solid hsl(215deg, 32%, 27%);
+  margin-bottom: 1.5rem;
+}
+
+.additional-information__container-value {
+  color: hsl(178deg, 100%, 50%);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.additional-information__day {
+  color: hsl(215deg, 51%, 70%);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.product-information__container-creator {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.container-creator__img-creator {
+  height: 3.5rem;
+  border: 0.1rem solid hsl(0deg, 0%, 100%);
+  border-radius: 100%;
+}
+
+.container-creator__name {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.3rem;
+}
+
+.name--color {
+  color: hsl(215deg, 51%, 70%);
+}
+
+@media (min-width: 500px) {
+  .product-information__paragraphy {
+    font-size: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
