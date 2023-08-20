@@ -1,0 +1,20 @@
+.main-footer {
+    height: 3.0rem;
+    display: flex;
+    align-items: center;
+}
+
+.main-footer__paragraphy {
+
+    margin: 0 auto;
+}
+
+.link {
+    margin-left: .5rem;
+}
+
+@media (min-width: 720px) {
+    .main-footer__paragraphy  {
+        font-size: 1.3rem;
+    }
+}

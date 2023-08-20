@@ -1,0 +1,15 @@
+body {
+    background-color: #D6E1FF;
+    background: url("../../../../public/pattern-background-mobile.svg") no-repeat;
+    background-size: cover;    
+    background-position: center;
+    font-family: $font-default;
+}
+
+@media (min-width: 68.8rem) {
+    body {
+        background: url("../../../../public/pattern-background-desktop.svg") no-repeat;
+        background-size: cover;  
+        background-position: center;
+    }
+}
