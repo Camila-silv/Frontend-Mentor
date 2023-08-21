@@ -1,47 +1,127 @@
 .main-content__container-card {
-
-
+  width: 100%;
+  max-width: 32rem;
+  background-color: $dark-desaturated-blue;
+  display: flex;
+  flex-direction: column;
+  color: $white;
+  border-radius: 1rem;
+  overflow: hidden;
+  font-family: $font-primary;
+  margin: 0 auto;
 }
 
 .container-card__card-header {
+  background-color: $Soft-violet;
+}
 
-
+.card-header__img {
+  width: 100%;
+  height: 100%;
+  filter: opacity(0.3);
 }
 
 .container-card__card-body {
-
-
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
 .card-body__title {
-
-
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 2.5rem;
 }
 
 .title--color {
+  color: $Soft-violet;
+}
 
-
+.title--br {
+    display: none;
 }
 
 .card-body__paragraphy {
-
-
+  color: $slightly-transparent-white;
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
-
 
 .card-body__list-of-achievements {
-
-
+  color: $slightly-transparent-white-stat;
 }
-
 
 .list-of-achievements__items {
-
-
+  margin-top: 3.5rem;
+  font-size: 1.0rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
 }
 
-
 .items--bold {
+  font-weight: 700;
+  display: block;
+  font-size: 2.0rem;
+  margin-bottom: 1rem;
+  color: $white;
+  letter-spacing: 0;
+}
 
-    
+.paragraphy--br {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .main-content__container-card {
+    flex-direction: row-reverse;
+    max-width: 900px;
+    height: 35rem;
+  }
+
+  .container-card__card-header {
+    flex: 1;
+  }
+  
+
+  .container-card__card-body {
+    padding: 5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: start;
+    width: 60%;
+  }
+
+  .card-body__title {
+    margin-bottom: 0;
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .title--br {
+    display: inline-block;
+}
+
+  .card-body__paragraphy {
+    margin-bottom: 2.5rem;
+  }
+
+  .paragraphy--br {
+    display: inline-block;
+  }
+
+  .card-body__list-of-achievements {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+  }
+
+  .list-of-achievements__items {
+    margin-top: 0;
+    text-align: start;
+  }
+
+  
 }

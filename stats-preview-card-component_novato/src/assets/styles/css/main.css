@@ -145,4 +145,133 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-color: hsl(233deg, 47%, 7%);
+}
+
+.main-content {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.main-content__container-card {
+  width: 100%;
+  max-width: 32rem;
+  background-color: hsl(244deg, 38%, 16%);
+  display: flex;
+  flex-direction: column;
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 1rem;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+  margin: 0 auto;
+}
+
+.container-card__card-header {
+  background-color: hsl(277deg, 64%, 61%);
+}
+
+.card-header__img {
+  width: 100%;
+  height: 100%;
+  filter: opacity(0.3);
+}
+
+.container-card__card-body {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.card-body__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 2.5rem;
+}
+
+.title--color {
+  color: hsl(277deg, 64%, 61%);
+}
+
+.title--br {
+  display: none;
+}
+
+.card-body__paragraphy {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.card-body__list-of-achievements {
+  color: hsla(0deg, 0%, 100%, 0.6);
+}
+
+.list-of-achievements__items {
+  margin-top: 3.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.items--bold {
+  font-weight: 700;
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: hsl(0deg, 0%, 100%);
+  letter-spacing: 0;
+}
+
+.paragraphy--br {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .main-content__container-card {
+    flex-direction: row-reverse;
+    max-width: 900px;
+    height: 35rem;
+  }
+  .container-card__card-header {
+    flex: 1;
+  }
+  .container-card__card-body {
+    padding: 5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: start;
+    width: 60%;
+  }
+  .card-body__title {
+    margin-bottom: 0;
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .title--br {
+    display: inline-block;
+  }
+  .card-body__paragraphy {
+    margin-bottom: 2.5rem;
+  }
+  .paragraphy--br {
+    display: inline-block;
+  }
+  .card-body__list-of-achievements {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+  }
+  .list-of-achievements__items {
+    margin-top: 0;
+    text-align: start;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
