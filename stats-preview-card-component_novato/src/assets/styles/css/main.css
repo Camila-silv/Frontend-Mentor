@@ -157,6 +157,11 @@ body {
   padding: 0 2rem;
 }
 
+@media (min-width: 900px) {
+  .main-content {
+    height: calc(100vh - 3rem);
+  }
+}
 .main-content__container-card {
   width: 100%;
   max-width: 32rem;
@@ -271,6 +276,23 @@ body {
   .list-of-achievements__items {
     margin-top: 0;
     text-align: start;
+  }
+}
+.main-footer {
+  height: 3rem;
+  color: hsl(0deg, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-footer__paragraphy {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+@media (min-width: 900px) {
+  .main-footer__paragraphy {
+    font-size: 1.3rem;
   }
 }
 
