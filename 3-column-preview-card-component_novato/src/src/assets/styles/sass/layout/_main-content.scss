@@ -19,7 +19,7 @@
 @media (min-width: 800px ) {
 
   .main-content {
-    height: 100vh;
+    height: calc(100vh - 3.0rem);
   }
 
   .main-content__plans-section {

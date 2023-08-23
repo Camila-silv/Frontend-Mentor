@@ -1,7 +1,9 @@
 export default function Footer() {
   return (
-    <footer>
-      <p>Challenge by Frontend Mentor. Coded by Your Name Here.</p>
+    <footer className="main-footer">
+      <p className="main-footer__paragraphy">
+        Challenge by Frontend Mentor. Coded by Camila Silva.
+      </p>
     </footer>
   );
 }

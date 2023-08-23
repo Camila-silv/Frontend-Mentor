@@ -169,10 +169,26 @@ a {
 
 @media (min-width: 800px) {
   .main-content {
-    height: 100vh;
+    height: calc(100vh - 3rem);
   }
   .main-content__plans-section {
     flex-direction: row;
+  }
+}
+.main-footer {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.main-footer__paragraphy {
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  .main-footer__paragraphy {
+    font-size: 1.3rem;
   }
 }
 .default-button {

@@ -1,0 +1,16 @@
+.main-footer {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  font-family: $font-secondary;
+}
+
+.main-footer__paragraphy {
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  .main-footer__paragraphy {
+    font-size: 1.3rem;
+  }
+}
