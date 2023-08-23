@@ -1,0 +1,28 @@
+.main-content {
+  width: 100%;
+  max-width: 1440px;
+  padding: 4.0rem 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.main-content__plans-section {
+  border-radius: .6rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media (min-width: 800px ) {
+
+  .main-content {
+    height: 100vh;
+  }
+
+  .main-content__plans-section {
+    flex-direction: row;
+  }
+}

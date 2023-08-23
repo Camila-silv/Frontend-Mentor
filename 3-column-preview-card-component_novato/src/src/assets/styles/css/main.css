@@ -1,0 +1,226 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.body {
+  background-color: hsl(0deg, 0%, 95%);
+}
+
+.main-content {
+  width: 100%;
+  max-width: 1440px;
+  padding: 4rem 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.main-content__plans-section {
+  border-radius: 0.6rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  .main-content {
+    height: 100vh;
+  }
+  .main-content__plans-section {
+    flex-direction: row;
+  }
+}
+.default-button {
+  background-color: hsl(0deg, 0%, 95%);
+  border: none;
+  border-radius: 2rem;
+  font-family: "Lexend Deca", sans-serif;
+  text-transform: capitalize;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.card {
+  height: 35rem;
+  width: 100%;
+  max-width: 26.2rem;
+  padding: 3.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: "Big Shoulders Display", cursive;
+  background-color: hsl(31deg, 77%, 52%);
+  gap: 3rem;
+}
+
+.plan-car__icon {
+  height: 4.5rem;
+  width: 4.5rem;
+}
+
+.card_plan-car {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.plan-car__title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: hsl(0deg, 0%, 95%);
+}
+
+.plan-car__paragraphy {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+
+/*# sourceMappingURL=main.css.map */

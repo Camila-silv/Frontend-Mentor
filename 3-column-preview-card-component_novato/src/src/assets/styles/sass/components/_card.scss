@@ -1,0 +1,37 @@
+.card {
+  height: 35rem;
+  width: 100%;
+  max-width: 26.2rem;
+  padding: 3.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: $font-default;
+  background-color: $bright-orange;
+  gap: 3rem;
+}
+
+.plan-car__icon {
+  height: 4.5rem;
+  width: 4.5rem;
+}
+
+.card_plan-car {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.plan-car__title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: $very-light-gray;
+}
+
+.plan-car__paragraphy {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-family: $font-secondary;
+  color: $transparent-white;
+}
