@@ -1,6 +1,7 @@
 import Card from "../Card";
+import PropTypes from "prop-types";
 
-export default function MainContent() {
+export default function MainContent({setModal}) {
   const content = [
     {
       icon: "public/icon-sedans.svg",
@@ -25,24 +26,30 @@ export default function MainContent() {
         "Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.",
       bg: "hsl(179, 100%, 13%)",
       color: "hsl(179, 100%, 13%)",
-    }
+    },
   ];
 
   return (
     <main className="main-content">
       <section className="main-content__plans-section">
-
-        
-
         {content.map((card) => {
           return (
-            <Card title={card.title} paragraphy={card.paragraphy} icon={card.icon} bg={card.bg} color={card.color} key={card.title}/>
-          )
+            <Card
+              title={card.title}
+              paragraphy={card.paragraphy}
+              icon={card.icon}
+              bg={card.bg}
+              color={card.color}
+              key={card.title}
+              setModal={setModal}
+            />
+          );
         })}
-       
-       
-        
       </section>
     </main>
   );
+}
+
+MainContent.propTypes = {
+  setModal: PropTypes.bool
 }

@@ -7,4 +7,9 @@
     text-transform: capitalize;
     padding: 1.0rem 2.0rem;
     cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        background-color: hsl(0, 0%, 87%);
+    }
 }

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-export default function Card({ title, paragraphy, icon, bg, color }) {
+export default function Card({ title, paragraphy, icon, bg, color, setModal }) {
   return (
     <div className="card" style={{ backgroundColor: bg }}>
       <div className="card_plan-car">
@@ -9,7 +9,7 @@ export default function Card({ title, paragraphy, icon, bg, color }) {
         <p className="plan-car__paragraphy">{paragraphy}</p>
       </div>
 
-      <button className="card__button default-button" style={{ color: color }}>
+      <button className="card__button default-button" style={{ color: color }} onClick={() => setModal(true)}>
         Learn more
       </button>
     </div>
@@ -22,4 +22,5 @@ Card.propTypes = {
   icon: PropTypes.string,
   bg: PropTypes.string,
   color: PropTypes.string,
+  setModal: PropTypes.bool
 };
