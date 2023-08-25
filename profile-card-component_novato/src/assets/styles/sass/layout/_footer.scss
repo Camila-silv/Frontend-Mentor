@@ -1,0 +1,16 @@
+.footer {
+
+    height: 3.0rem;
+    font-family: $font-default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $dark-cyan;
+
+}
+
+.footer__paragraphy {
+    color: $very-dark-desaturated-blue;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
