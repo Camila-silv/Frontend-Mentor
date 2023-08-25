@@ -1,0 +1,11 @@
+@mixin skill-panel($color, $bg-color, $url) {
+  background-color: $bg-color;
+
+  .skill-identification__lbl {
+    color: $color;
+  }
+
+  .skill-identification__icon::before {
+    background-image: url($url);
+  }
+}
